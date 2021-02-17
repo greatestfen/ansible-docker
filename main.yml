@@ -1,0 +1,8 @@
+---
+- name: Setting up build server
+  hosts: node1
+  become: yes
+
+  roles:
+    - common
+    - appbuild
